@@ -1,20 +1,13 @@
 package com.example.messenger;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
 
 public final class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
@@ -37,6 +30,7 @@ public final class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int index) {
         TextView name = holder.itemView.findViewById(R.id.name);
         name.setText(String.format("%s",this.items.get(index).getName()));
+
     }
 
     @Override
@@ -51,8 +45,6 @@ public final class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             @Override
             public void onClick(View v)
             {
-                //  v.setOnClickListener();
-
                 Toast.makeText(v.getContext(), String.valueOf(position),Toast.LENGTH_SHORT).show();
             }
         });
