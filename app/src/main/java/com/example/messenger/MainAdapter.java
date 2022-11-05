@@ -1,6 +1,7 @@
 package com.example.messenger;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,10 @@ public final class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             @Override
             public void onClick(View v)
             {
+
+                Intent intent=new Intent(v.getContext(),Chat_Activity.class);
+                intent.putExtra("id",position);
+                v.getContext().startActivity(intent);
                 Toast.makeText(v.getContext(), String.valueOf(position),Toast.LENGTH_SHORT).show();
             }
         });
