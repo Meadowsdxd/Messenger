@@ -17,7 +17,8 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="#9F9F9F">
             <Button
                 android:gravity="center"
                 android:id="@+id/prevBTN"
@@ -93,7 +94,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:foreground="@drawable/lines"
+            android:background="#9F9F9F"
+            android:layout_marginBottom="1dp"
+
+            >
             <Button
                 android:gravity="center"
                 android:id="@+id/smileBTN"
@@ -105,12 +111,15 @@
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/lines"
+
+                android:layout_marginBottom="3dp"
                 android:layout_weight="1"
-                android:layout_marginBottom="3dp"/>
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="true" />
             <Button
                 android:gravity="center"
                 android:id="@+id/sendBTN"
