@@ -23,6 +23,7 @@
             tools:ignore="MissingConstraints">
 
             <Button
+                android:gravity="center"
                 android:id="@+id/imageViewMenu"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="50dp"
@@ -33,22 +34,24 @@
                 android:textColor="@color/black" />
 
             <TextView
-
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:text="@string/app_name"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:gravity="center"/>
 
-            <ImageView
-                android:id="@+id/ImageViewSearch"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="right"
-
-                android:background="@drawable/ic_search"
-                android:gravity="right" />
+            <Button
+                android:gravity="center"
+                android:id="@+id/imageViewSearch"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:drawableTop="@drawable/ic_search"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
 
         </LinearLayout>
