@@ -18,7 +18,55 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:orientation="horizontal">
+            <Button
+                android:gravity="center"
+                android:id="@+id/prevBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:foreground="@drawable/ic_prev"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:foreground="@mipmap/ic_launcher_round"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/loginName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:text="NAME SECONDNAME PATRON"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/Online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:text="Online" />
+            </LinearLayout>
+            <Button
+                android:gravity="center"
+                android:id="@+id/settBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:foreground="@drawable/ic_settings"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -45,7 +93,35 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+            <Button
+                android:gravity="center"
+                android:id="@+id/smileBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:foreground="@drawable/ic_smile"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lines"
+                android:layout_weight="1"
+                android:layout_marginBottom="3dp"/>
+            <Button
+                android:gravity="center"
+                android:id="@+id/sendBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0"
+                android:foreground="@drawable/ic_send"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                />
 
 
         </LinearLayout>
