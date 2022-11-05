@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-    ImageView imageView=findViewById(R.id.ImageViewMenu);
+    Button imageView=findViewById(R.id.imageViewMenu);
          drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer , R.string.navigation_drawer_open, R.string.navigation_drawer_close);
